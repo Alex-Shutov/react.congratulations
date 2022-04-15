@@ -1,6 +1,6 @@
 
 export class PhrasesBase{
-
+    //Ты
     public static FirstView:string[] =[
         'Красивая',
         'Прикольная',
@@ -8,6 +8,7 @@ export class PhrasesBase{
         'Забавная',
         'Отзывчивая'
     ];
+    // У тебя
     public static SecondView:string[] =[
         'Красивая1',
         'Прикольная1',
@@ -15,6 +16,7 @@ export class PhrasesBase{
         'Забавная1',
         'Отзывчивая1'
     ];
+     // К тебе
     public static ThirdView:string[] =[
         'Красивая2',
         'Прикольная2',
@@ -22,6 +24,8 @@ export class PhrasesBase{
         'Забавная2',
         'Отзывчивая2'
     ];
+
+    // Пусть
     public static FourthView:string[] =[
         'Красивая3',
         'Прикольная3',
@@ -29,6 +33,8 @@ export class PhrasesBase{
         'Забавная3',
         'Отзывчивая3'
     ];
+
+    // Желаю
     public static FifthView:string[] =[
         'Красивая4',
         'Прикольная4',
