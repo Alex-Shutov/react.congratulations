@@ -1,0 +1,22 @@
+@mixin FlexMedia($XXLarge:1200px,$XLarge:1000px,$Large:800px,$Medium:600px,$Small:400px){
+  @media (min-width: 1400px)  {
+    max-width: $XXLarge;
+    @content
+  }
+  @media (min-width: 1200px)  {
+    max-width: $XLarge;
+    @content
+  }
+  @media (min-width: 992px)  {
+    max-width: $Large;
+    @content
+  }
+  @media (min-width: 768px)  {
+    max-width: $Medium;
+    @content
+  }
+  @media (max-width: 576px)  {
+    max-width: $Small;
+    @content
+  }
+}

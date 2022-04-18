@@ -22,8 +22,8 @@ function shuffle(array:string[]){
         array[j]= t
     }
 
-    let tmp = array.slice(0,Math.floor(Math.random()*array.length));
-    return tmp.length!==0 ? tmp : [array[Math.floor(Math.random()*array.length)]]
+    let tmp = array.slice(0,Math.floor(Math.random()*5));
+    return tmp.length!==0 ? tmp : [array[Math.floor(Math.random()*5) ]]
 }
 
 
@@ -35,6 +35,9 @@ export function createCongrats() {
 
     const mixSecondPhrase = shuffle(startPhrase.get(objectKeysPhrase[mixStartKey]) || [])
 
-    return [objectKeysPhrase[mixStartKey],...mixSecondPhrase.join(',')]
+    let a = [objectKeysPhrase[mixStartKey],mixSecondPhrase]
+
+    return [objectKeysPhrase[mixStartKey],mixSecondPhrase]
+
 
 }

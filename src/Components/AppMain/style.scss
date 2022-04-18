@@ -1,0 +1,72 @@
+@import "../media";
+
+
+
+.mainContainer{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  background-color: #2b62ee;
+  color: whitesmoke;
+  padding-top: 5em;
+
+  div:first-child{
+    padding-bottom: 1em;
+
+  }
+}
+.mainHeader{
+ div {
+   flex-direction: row;
+   justify-content: center;
+   margin-bottom: 2em;
+   >*{
+     font-size: 3.5em;
+     width: auto;
+
+   }
+ }
+}
+
+.wrapperContent{
+  max-width: 65%;
+  margin: auto;
+  margin-bottom: 4em;
+}
+
+
+.mainRow{
+  padding: 20px 40px;
+  background-color: #0088fc;
+  margin-bottom: 1em;
+  border-radius: 10px;
+  justify-content: center;
+}
+.mainRow:hover{
+  background-color: #7ce3ba;
+  color: #1e5e60;
+}
+.wrapperButton{
+  div{
+    justify-content: center;
+    margin-bottom: 4em ;
+  }
+  button{
+    background-color: rgb(145, 245, 153);
+    color: #1e5e60;
+    width: 200px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .mainHeader div h1{
+    font-size: 2.5em;
+  }
+}
+.wrapperMain{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  div:last-of-type{
+    align-self: center;
+  }
+}
