@@ -1,9 +1,9 @@
-import React, {useEffect, useState} from 'react';
+import React, {useState} from 'react';
 import {createCongrats} from "../../Utils/CreateRandomCongrat";
 
 import style from './style.scss'
 
-import {Button, Col, Container, Row} from "react-bootstrap";
+import {Button, Container, Row} from "react-bootstrap";
 import AppFooter from "../AppFooter/AppFooter";
 
 const AppMain = (props:any) => {
@@ -30,7 +30,7 @@ const AppMain = (props:any) => {
             <div>
                 <Container className={style.mainHeader}>
                     <Row>
-                        <h1>{props.name}! {congrats[0]},</h1>
+                        <h1>{props.name}! <span>{congrats[0]}</span></h1>
                     </Row>
                 </Container>
                 <div className={style.wrapperContent}>
@@ -45,10 +45,10 @@ const AppMain = (props:any) => {
             </div>
             <Container className={style.wrapperButton}>
                 <Row>
-                    <Button onClick={()=>setCongrats(createCongrats())}>Обновить</Button>
+                        <Button onClick={()=>setCongrats(createCongrats())}>Обновить</Button>
                 </Row>
             </Container>
-            <AppFooter></AppFooter>
+            <AppFooter/>
         </div>
     );
 };
